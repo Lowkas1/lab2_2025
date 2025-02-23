@@ -7,4 +7,5 @@ L - Lab
 E - Exercicio  
 L - Lucas  
 P - Philip\
-A - Ajuda/AI
+A - Ajuda/AI<br>
+V - Versao
