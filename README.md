@@ -6,4 +6,5 @@ Nomenclatura:
 L - Lab  
 E - Exercicio  
 L - Lucas  
-P - Philip
+P - Philip\
+A - Ajuda/AI
