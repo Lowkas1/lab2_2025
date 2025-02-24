@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+
+int main(int argc, char const *argv[])
+{
+        double num;
+        int n; 
+        double valor;
+        double ajusto;
+        double resultado;
+
+
+        printf("Escreva o número que deseja arredondar: \n");
+        while(1){
+            if (scanf("%lf", &num) == 1){
+             break;
+            }
+            printf("\n Entrada Inválida! Digite um valor válido \n");
+            while (getchar() != '\n');
+        }
+
+    printf("Escreva a n-esima casa decimal que deseja arredondar ");
+    while(1){
+        if (scanf("%d", &n) == 1){
+         break;
+        }
+        printf("\n Entrada Inválida! Digite um valor válido \n");
+        while (getchar() != '\n');
+    }
+    for(int i = 0; i < n; i++){
+
+    valor *= 10;
+    ajusto *= 1/10;
+    }
+    resultado = (num * valor) + 0,5 + ajusto;
+    resultado = (int)resultado;
+    resultado = resultado * ajusto;
+    printf("Arredondado para %d - esima: %.*f\n ", n, n, resultado);
+    return 0;
+}
